@@ -98,7 +98,7 @@ nav ul li a {
 }
 
 .about-me-section {
-    margin: 100px 100px;
+    padding: 48px;
 }
 .photo {
     margin: auto;
@@ -133,13 +133,13 @@ nav ul li a {
     margin-bottom: 50px;
 }
 
-.about-me-head {
+.title {
     margin: auto;
     
     width: 298px;
     height: 93px;
 
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 72px;
@@ -151,7 +151,13 @@ nav ul li a {
     color: #000000;
 }
 
+.projects-section {
+    padding: 48px;
+}
 
+.projects-section li {
+    
+}
 /* Firstname Lastname */
 
 position: absolute;
