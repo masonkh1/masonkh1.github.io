@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/4a991ed3f0.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="/styles/all.min.css">
+    
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=PT+Sans" />
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
     <link href="/styles/style.css" rel="stylesheet">
@@ -17,77 +17,122 @@
         <nav>
             <div class="navbar">
                 <ul>
-                    <li>ABOUT</li>
-                    <li>PROJECTS</li>
-                    <li>CONTACT</li>
+                    <li><a href="#about-me" class="navlink" id="about-me-nav">ABOUT</a></li>
+                    <li><a href="#training" class="navlink" id="training-nav">TRAINING</a></li>
+                    <li><a href="#projects" class="navlink" id="projects-nav">PROJECTS</a></li>
+                    <li><a href="#contact" class="navlink" id="contact-nav">CONTACT</a></li>
                 </ul>
             </div>
         </nav>
         
         <h1 class="name"> Mason Hall </h1>
     </header>
-    <div class="about-me-section">
+    <section id="about-me">
         <h1 class="title">About Me</h1>
         <div class="photo"></div>
         <div class="info">
             <p>Mason Hall has many interests and hobbies.  In particular he enjoys art and other creative activities.  In his spare time he likes to draw, paint, craft, or in general create.</p>
             <p>Mason Hall is a professional illustrator and fine artist based in Utah.  He specializes in both digital and oil paintings.  He especially loves to depict fantasy art, landscapes, and commissioned portraits and seeks to constantly self-improve.</p>
+            
+        </div>
+    </section>
+    <section id="training">
+        <h1 class="title">Training</h1>
+        <div class="training-flex">
+            <a href="https://www.instagram.com/p/CCtjU9dpAqq/" class="art-block">
+                <img src="/img/art1.jpg">
+            </a>
+            <a href="https://www.instagram.com/p/CBPZFwbpsQd/" class="art-block">
+                <img src="/img/art3.jpg">
+            </a>
+            <a href="https://www.instagram.com/p/CBMJxshpbXk/" class="art-block">
+                <img src="/img/art4.jpg">
+            </a>
+        </div>
+        <div class="info">
+            
             <p>Mason Hall was inspired by many artists throughout his life, taking inspiration from everything such as classical artists like Rembrandt, Vermeer, to modern artists such as Rick Graham, Rob Adamson, and many others.  He has taken classes from several institutions including Brigham Young University Idaho, Brigham Young University Provo, Utah Valley University, and SLCC before getting his Associates of Illustration.  As a professional he continues to constantly study and improve his craft.</p>
             
         </div>
-    </div>
-    <div class="projects-section">
+    </section>
+    <section id="projects">
         <h1 class="title">Projects</h1>
         <ul>
             <li>
-                <div class="project-image"></div>
-                <div class="project-title">
-                    <h1 class="project-head">Title 1</h1>
-                    <div class="project-brief">Problem I solved</div>
+                <div class="project-flex">
+                    <div class="project-image"></div>
+                    <div class="project-title">
+                        <h1 class="project-head">Title 1</h1>
+                        <div class="project-brief">Problem I solved</div>
+                    </div>
+                    <button id="project1" type="button" class="project-button">VIEW PROJECT</button>
                 </div>
-                <button type="button" class="project-button">VIEW PROJECT</button>
+                <div id="project1-content" class="project-content content1">
+                    <p>Some text goes here andsome more text</p>
+                    <p>Some text goes here andsome more text</p>
+                    <p>Some text goes here andsome more text</p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="project-flex">
+                    <div class="project-image"></div>
+                    <div class="project-title">
+                        <h1 class="project-head">Title 1</h1>
+                        <div class="project-brief">Problem I solved</div>
+                    </div>
+                    <button id="project2" type="button" class="project-button">VIEW PROJECT</button>
+                </div>
+                <div id="project2-content" class="project-content content1">
+                    <p>Some text goes here andsome more text</p>
+                </div>
             </li>
             <li>
-                <div class="project-image"></div>
-                <div class="project-title">
-                    <h1 class="project-head">Title 2</h1>
-                    <div class="project-brief">Problem I solved</div>
+                <div class="project-flex">
+                    <div class="project-image"></div>
+                    <div class="project-title">
+                        <h1 class="project-head">Title 1</h1>
+                        <div class="project-brief">Problem I solved</div>
+                    </div>
+                    <button id="project3" type="button" class="project-button">VIEW PROJECT</button>
                 </div>
-                <button type="button" class="project-button">VIEW PROJECT</button>
+                <div id="project3-content" class="project-content content1">
+                    <p>Some text goes here andsome more text</p>
+                </div>
             </li>
             <li>
-                <div class="project-image"></div>
-                <div class="project-title">
-                    <h1 class="project-head">Title 3</h1>
-                    <div class="project-brief">Problem I solved</div>
+                <div class="project-flex">
+                    <div class="project-image"></div>
+                    <div class="project-title">
+                        <h1 class="project-head">Title 1</h1>
+                        <div class="project-brief">Problem I solved</div>
+                    </div>
+                    <button id="project4" type="button" class="project-button">VIEW PROJECT</button>
                 </div>
-                <button type="button" class="project-button">VIEW PROJECT</button>
-            </li>
-            <li>
-                <div class="project-image"></div>
-                <div class="project-title">
-                    <h1 class="project-head">Title 4</h1>
-                    <div class="project-brief">Problem I solved</div>
+                <div id="project4-content" class="project-content content1">
+                    <p>Some text goes here andsome more text</p>
                 </div>
-                <button type="button" class="project-button">VIEW PROJECT</button>
             </li>
         </ul>
-    </div>
-    <div class="contact-section">
-        <a href="https://github.com/masonkh1/">
-            <i class="fa-brands fa-github fa-7x"></i>
-        </a>
-        <a href="https://www.instagram.com/masonkhart/">
-            <i class="fa-brands fa-instagram-square fa-7x"></i>
-        </a>
-        <a href="https://www.linkedin.com/">
-            <i class="fa-brands fa-linkedin fa-7x"></i>
-        </a>
-        <a href="mailto:someone@yoursite.com">
-            <i class="fa-solid fa-envelope fa-7x"></i>
-        </a>
-        <div id="copyright">&copy Mason Hall 2022</div>
-    </div>
-    
+    </section>
+    <section id="contact">
+        <h1 class="title">Lets get in contact!</h1>
+        <div class="link-bar">
+            <a href="https://github.com/masonkh1/">
+                <i class="fa-brands fa-github fa-7x"></i>
+            </a>
+            <a href="https://www.instagram.com/masonkhart/">
+                <i class="fa-brands fa-instagram-square fa-7x"></i>
+            </a>
+            <a href="https://www.linkedin.com/">
+                <i class="fa-brands fa-linkedin fa-7x"></i>
+            </a>
+            <a href="mailto:someone@yoursite.com">
+                <i class="fa-solid fa-envelope fa-7x"></i>
+            </a>
+            <div id="copyright">&copy Mason Hall 2022</div>
+        </div>
+    </section>
+    <script src="/scripts/script.js" type="text/javascript"></script>
 </body>
 </html>

@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     padding: 0;
     margin: 0;
@@ -22,6 +25,10 @@ header {
     background-size: cover;
     background-attachment: fixed;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+section {
+    padding: 48px;
 }
 
 nav {
@@ -67,6 +74,17 @@ nav ul li a {
     text-decoration: none;
     color: #ffffff;
     font-size: 16px;
+    height: 25px;
+    background: #1C2A29;
+    padding: 30px;
+}
+nav ul li a:hover {
+    color: #c2c2c2;
+}
+
+nav ul li a.active {
+    color: #9b9b9b;
+    background-color: #224441;
 }
 
 .navbar {
@@ -104,9 +122,6 @@ nav ul li a {
 
 }
 
-.about-me-section {
-    padding: 48px;
-}
 .photo {
     margin: auto;
     
@@ -142,8 +157,9 @@ nav ul li a {
 
 .title {
     margin: auto;
+    margin-top: 100px;
     
-    width: 298px;
+    
     height: 93px;
     margin-bottom: 79px;
 
@@ -152,23 +168,60 @@ nav ul li a {
     font-weight: 700;
     font-size: 72px;
     line-height: 93px;
-    display: flex;
+    
     align-items: center;
     text-align: center;
-
+    
     color: #000000;
 }
 
-.projects-section {
-    padding: 48px;
+.training-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.art-block {
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+    height: 320px;
+    width: 320px;
+    display:flex;
+    align-items:center;
+    
+}
+.art-block img {
+    
+    
+    max-width:100%;
+    max-height:100%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#art1 {
+
+}
+#art2 {
+    
+}
+#art3 {
+    
+}
+#art4 {
     
 }
 
-.projects-section li {
+#projects li {
+    margin-bottom: 50px;
+}
+
+.project-flex {
     background: #C4C4C4;
     height: 210px;
     
-    margin-bottom: 50px;
+    
     display: flex;
     flex-direction: row;
 }
@@ -235,11 +288,20 @@ nav ul li a {
     color: #b6b6b6;
 }
 
-.contact-section {
-    padding: 48px;
+.project-content {
+    padding: 0 15px;
+    overflow: hidden;
+    background-color: #afafaf;
+    
+    max-height: 0px;
+    transition: max-height 0.2s ease-out;
+}
+
+.link-bar {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-bottom: 250px;
 }
 
 #copyright {
