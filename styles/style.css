@@ -334,7 +334,7 @@ nav ul li a.active {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-bottom: 250px;
+    margin-bottom: 275px;
 }
 
 #copyright {
