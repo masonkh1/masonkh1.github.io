@@ -11,8 +11,7 @@ body {
 
 header {
 
-    /*position: relative;
-    width: 100%;*/
+    width: 100%;
     background-size: cover;
     background-position: center;
     background-color: black;
@@ -20,7 +19,7 @@ header {
     padding: 0px;
     margin: 0px;
     height: 600px;
-    background: url(https://s3-alpha-sig.figma.com/img/90c6/f9cf/3635ae7fb673f5c4f8112c2254e5b589?Expires=1651449600&Signature=Ih0kfsABeeRfkSrOudWo3EmvVULddM2Hil09VCXBXOZmOwUPShf7pn5IecmBXHBuqrwiXa0FVhWs1iL6LKEPsiN~ZORo-HJUCYoVtuNx1aJiO1L4dlT21cu3SKUr8sa3f0fLQEgWXiv96Y-Ahd~uEOR~NniwXA6kFDRfq8CM5JSA9DW9ypaxnA0qEGsPhz9cUabEqET7MKqlajMFXRAQMZ9333ng1MhvpOy~77Dv6qYFxYAGAP1xL0gt413XycgFw-DYPA4FN92~88FthaLbHGul5iKNU9tmK2Rrcp1S7xpy9NpPwjSegz1Y50SWC~G1AGJQ-CrzEa214HR-~WXlvw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA), #FFFFFF;
+    background: url("https://images.unsplash.com/photo-1570393080660-de4e4a15a247?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80"), #FFFFFF;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -46,13 +45,13 @@ ul {
 }
 
 nav ul {
-    position: fixed;
-    top: 40px;
+    
+    width: 100%;
     margin: auto;
-    justify-content: space-between;
+    
     display: flex;
-    width: 40%;
-    padding: 0px 100px;
+    justify-content: space-around;
+    align-items: center;
 }
 
 nav ul li {
@@ -89,16 +88,11 @@ nav ul li a.active {
 
 .navbar {
     
-    /*position: absolute;*/
-    /*
-    width: 1440px;
-    height: 503px;
-    left: 0px;
-    top: 97px;*/
     width: 100%;
     height: 100px;
-    left: 0px;
-    top: 0px;
+    
+    display: flex;
+    justify-content: center;
     
     
     background: #1C2A29;
@@ -179,8 +173,8 @@ nav ul li a.active {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .art-block {
@@ -200,18 +194,6 @@ nav ul li a.active {
     max-height:100%;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-#art1 {
-
-}
-#art2 {
-    
-}
-#art3 {
-    
-}
-#art4 {
-    
-}
 
 #projects li {
     margin-bottom: 50px;
@@ -225,17 +207,66 @@ nav ul li a.active {
     display: flex;
     flex-direction: row;
 }
+.project-image1 {
+    background: url("/img/project1.PNG"), #C4C4C4;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.project-image2 {
+    background: url("/img/project2.PNG"), #C4C4C4;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.project-image3 {
+    background: url("/img/project3.PNG"), #C4C4C4;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 .project-image {
     height: 85px;
     width: 85px;
-    background: url(https://s3-alpha-sig.figma.com/img/473f/7f3a/7fbb5403e4bd1bc7784c2e3bb3bfb8a2?Expires=1651449600&Signature=WGpCVLKcRg~SmqUO812GmIqzGtVUrQ1D5pr2kmULicASDs8KCvAuiCYMLZrsr552N7hwvDx-NZYjezAuni1Jj5LxlLOeiwK6~1iaA3icwtIoXY8C-4cWvZbXkJdju37~FDBOvbG84WZp~HHLQ3lTgRc5gzbLwRFAJm9X6giCoFLmDq~SBp3IF8gqj379R96tKzmm30u4kJ24vQfw-m~PJA~N1bzrKrSN-bE1YkEQmSOH5vH2kuNn4bS3caXgFhemvgokH73sbPU0l2nEjP0LuMyWAspzrLWsd5FTG2vu8JIKXnn7J1WeX0d-UEDJec4LX79lTvObsYRqc7H5PdlJlA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA), #C4C4C4;
-    background-repeat: no-repeat;
+    
     background-size: cover;
-    background-position-x: center;
+    
     margin-top: 67px;
     margin-left: 105px;
     margin-right: 20px;
+}
+
+.project-image-big {
+    height: 385px;
+    width: 385px;
+    
+    background-size: contain;
+    
+    margin-top: 67px;
+    margin-left: 105px;
+    margin-bottom: 67px;
+}
+
+.project-desc {
+    font-family: "PT Sans", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 385px;
+
+    margin-left: auto;
+    margin-right: 105px;
+}
+
+.project-desc a {
+    color: white;
+}
+
+.project-desc a:hover {
+    color:#F0F0F0;
 }
 
 .project-title {
@@ -292,6 +323,8 @@ nav ul li a.active {
     padding: 0 15px;
     overflow: hidden;
     background-color: #afafaf;
+    display: flex;
+    flex-direction: row;
     
     max-height: 0px;
     transition: max-height 0.2s ease-out;
